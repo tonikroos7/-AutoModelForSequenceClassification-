@@ -113,3 +113,207 @@ Some weights of the model checkpoint at distilbert-base-uncased were not used wh
 - This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.bias', 'classifier.weight', 'pre_classifier.weight']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3334: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.635875}
+ - Average validation metrics: accuracy={'accuracy': 0.6110091743119266}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.710375}
+ - Average validation metrics: accuracy={'accuracy': 0.6137614678899083}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.824125}
+ - Average validation metrics: accuracy={'accuracy': 0.6412844036697247}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.89775}
+ - Average validation metrics: accuracy={'accuracy': 0.6892966360856269}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.942}
+ - Average validation metrics: accuracy={'accuracy': 0.7055045871559633}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.965375}
+ - Average validation metrics: accuracy={'accuracy': 0.7009174311926606}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.981625}
+ - Average validation metrics: accuracy={'accuracy': 0.7036697247706422}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 965.98it/s]
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.weight', 'vocab_projector.bias', 'vocab_transform.bias', 'vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.bias', 'classifier.weight', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3334: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.632375}
+ - Average validation metrics: accuracy={'accuracy': 0.6743119266055045}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.70625}
+ - Average validation metrics: accuracy={'accuracy': 0.6941896024464832}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.83475}
+ - Average validation metrics: accuracy={'accuracy': 0.681651376146789}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.8935}
+ - Average validation metrics: accuracy={'accuracy': 0.6853211009174311}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.93525}
+ - Average validation metrics: accuracy={'accuracy': 0.6685015290519878}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.959625}
+ - Average validation metrics: accuracy={'accuracy': 0.7055045871559633}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.98}
+ - Average validation metrics: accuracy={'accuracy': 0.7085626911314985}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy={'accuracy': 0.98825}
+ - Average validation metrics: accuracy={'accuracy': 0.7091743119266055}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy={'accuracy': 0.99375}
+ - Average validation metrics: accuracy={'accuracy': 0.7097859327217125}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 788.11it/s]
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.weight', 'vocab_projector.bias', 'vocab_transform.bias', 'vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.bias', 'classifier.weight', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3334: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.615}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.6235}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 932.69it/s]
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.weight', 'vocab_projector.bias', 'vocab_transform.bias', 'vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.bias', 'classifier.weight', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3334: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.611875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.62375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.614875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.624}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 994.74it/s]
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.weight', 'vocab_projector.bias', 'vocab_transform.bias', 'vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.bias', 'classifier.weight', 'pre_classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.

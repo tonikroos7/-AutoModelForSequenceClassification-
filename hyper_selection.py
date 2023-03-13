@@ -276,11 +276,6 @@ if __name__ == "__main__":
 
     assert type(args.small_subset) == bool, "small_subset must be a boolean"
 
-    # load the data and models
-    pretrained_model, train_dataloader, validation_dataloader, test_dataloader = pre_process(args.model,
-                                                                                             args.batch_size,
-                                                                                             args.device,
-                                                                                             args.small_subset)
 
     print(" >>>>>>>>  Starting training ... ")
     learning_rates = [1e-4, 5e-4, 1e-3]

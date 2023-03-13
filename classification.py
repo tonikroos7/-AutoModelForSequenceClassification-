@@ -190,9 +190,9 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
         val = [i['accuracy'] for i in val_acc]
 
     plt.plot(acc, label='Training Accuracy')
+    plt.plot(val, label='Validation Accuracy')
     plt.xlabel("Epoch")
     plt.ylabel("Accuracy")
-    plt.plot(val, label='Validation Accuracy')
     plt.legend()
     plt.savefig("train_val.png")
 
