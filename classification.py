@@ -128,6 +128,7 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
 
     loss = torch.nn.CrossEntropyLoss()
     train_acc = []
+    val_acc =[]
 
     for epoch in range(num_epochs):
 
@@ -186,10 +187,14 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
         val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
         print(f" - Average validation metrics: accuracy={val_accuracy}")
         acc = [i['accuracy'] for i in train_acc]
-    plt.plot(acc)
+        val = [i['accuracy'] for i in val_acc]
+
+    plt.plot(acc, label='Training Accuracy')
     plt.xlabel("Epoch")
-    plt.ylabel("Training Accuracy")
-    plt.savefig('train6_img.png')
+    plt.ylabel("Accuracy")
+    plt.plot(val, label='Validation Accuracy')
+    plt.legend()
+    plt.savefig("train_val.png")
 
 
 def pre_process(model_name, batch_size, device, small_subset):
