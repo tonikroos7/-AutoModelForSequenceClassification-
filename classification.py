@@ -8,7 +8,7 @@ from transformers import get_scheduler
 from transformers import AutoModelForSequenceClassification
 import argparse
 import subprocess
-
+from matplotlib import pyplot as plt
 
 def print_gpu_memory():
     """
