@@ -9,6 +9,7 @@ from transformers import AutoModelForSequenceClassification
 import argparse
 import subprocess
 from matplotlib import pyplot as plt
+import numpy as np
 
 def print_gpu_memory():
     """

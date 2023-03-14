@@ -282,22 +282,52 @@ if __name__ == "__main__":
     print(" >>>>>>>>  Starting training ... ")
     learning_rates = [1e-4, 5e-4, 1e-3]
     training_epoch = [5,7,9]
+    model_list = ["bert-base-uncased"]
 
     valrank = []
-    for lr in learning_rates:
-        for epoch in training_epoch:
-            pretrained_model, train_dataloader, validation_dataloader, test_dataloader = pre_process(args.model,
-                                                                                             args.batch_size,
-                                                                                             args.device,
-                                                                                             args.small_subset)
-            _,valacc,test_accuracy = train(pretrained_model, epoch, train_dataloader, validation_dataloader, test_dataloader, "cuda", lr)
-            valrank.append([valacc,lr,epoch,test_accuracy])
+    for model in model_list:
+        for lr in learning_rates:
+            for epoch in training_epoch:
+                pretrained_model, train_dataloader, validation_dataloader, test_dataloader = pre_process(model,
+                                                                                             64,
+                                                                                             "cuda",
+                                                                                             'store_true')
+                _,valacc,test_accuracy = train(pretrained_model, epoch, train_dataloader, validation_dataloader, test_dataloader, "cuda", lr)
+                valrank.append([valacc,lr,epoch,test_accuracy])
 
-    maxval = np.amax(np.array(valrank)[:,0:3],axis=0)[0]
-    index = np.where(maxval==np.array(valrank)[:,0:3])[0][0]
-    print("The model with learning rate {} and epoch {} has the best validation accuracy of {}.".format(valrank[index][1], valrank[index][2], maxval))
-    print(f" - The test accuracy of the best model={valrank[index][3]}")
-
+            valid_accuracy = np.array(valrank)[:,0]
+            test_accuracy_list = np.array([i['accuracy'] for i in np.array(valrank)[:,3]])
+    
+    barWidth = 0.25
+    fig = plt.subplots(figsize =(12, 8))
+ 
+    # set height of bar
+    IT = valid_accuracy
+    ECE = test_accuracy_list
+    #CSE = [29, 3, 24, 25, 17]
+ 
+    # Set position of bar on X axis
+    br1 = np.arange(len(IT))
+    br2 = [x + barWidth for x in br1]
+    #br3 = [x + barWidth for x in br2]
+ 
+    # Make the plot
+    plt.bar(br1, IT, color ='r', width = barWidth,
+        edgecolor ='grey', label ='valid_accuracy')
+    plt.bar(br2, ECE, color ='g', width = barWidth,
+        edgecolor ='grey', label ='test_accuracy')
+    #plt.bar(br3, CSE, color ='b', width = barWidth,
+        #edgecolor ='grey', label ='CSE')
+ 
+    # Adding Xticks
+    plt.xlabel('Bert-base_uncased', fontweight ='bold', fontsize = 15)
+    plt.ylabel('Accuracy', fontweight ='bold', fontsize = 15)
+    plt.xticks([r + barWidth for r in range(len(IT))],
+        ['1e-4\n Epoch=1', '1e-4\n Epoch=2', '1e-4\n Epoch=3', '5e-4\n Epoch=1', '5e-4\n Epoch=2', '5e-4\n Epoch=3', '1e-3\n Epoch=1', '1e-3\n Epoch=2', '1e-3\n Epoch=3'])
+ 
+    plt.legend()
+    plt.savefig("bert-base-uncased.png")
+    
     # print the GPU memory usage just to make sure things are alright
     print_gpu_memory()
 
