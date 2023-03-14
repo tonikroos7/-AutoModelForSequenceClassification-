@@ -189,13 +189,9 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
         acc = [i['accuracy'] for i in train_acc]
         val = [i['accuracy'] for i in val_acc]
 
-    plt.plot(acc, label='Training Accuracy')
-    plt.plot(val, label='Validation Accuracy')
-    plt.xlabel("Epoch")
-    plt.ylabel("Accuracy")
-    plt.legend()
-    plt.savefig("train_val.png")
-
+    with open('test_val.npy', 'wb') as f:
+        np.save(f, np.array(acc))
+        np.save(f, np.array(val))
 
 def pre_process(model_name, batch_size, device, small_subset):
     # download dataset
