@@ -30,4 +30,4 @@ pip install -r requirements.txt # install Python dependencies
 #srun python hyper_selection.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "64" --lr 1e-4 --num_epochs 30
 
 # runs multi model code
-srun python multi_model.py  --experiment "overfit" --small_subset --device cuda --model "distilbert-base-uncased" --batch_size "64" --lr 1e-4 --num_epochs 10
+srun python multi_model.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "64" --lr 1e-4 --num_epochs 10

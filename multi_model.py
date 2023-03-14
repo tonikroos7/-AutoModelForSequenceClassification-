@@ -282,7 +282,7 @@ if __name__ == "__main__":
     print(" >>>>>>>>  Starting training ... ")
     learning_rates = [1e-4, 5e-4, 1e-3]
     training_epoch = [5,7,9]
-    model_list = ["bert-base-uncased"]
+    model_list = ["bert-base-cased"]
 
     valrank = []
     for model in model_list:
@@ -304,29 +304,25 @@ if __name__ == "__main__":
     # set height of bar
     IT = valid_accuracy
     ECE = test_accuracy_list
-    #CSE = [29, 3, 24, 25, 17]
  
     # Set position of bar on X axis
     br1 = np.arange(len(IT))
     br2 = [x + barWidth for x in br1]
-    #br3 = [x + barWidth for x in br2]
  
     # Make the plot
     plt.bar(br1, IT, color ='r', width = barWidth,
         edgecolor ='grey', label ='valid_accuracy')
     plt.bar(br2, ECE, color ='g', width = barWidth,
         edgecolor ='grey', label ='test_accuracy')
-    #plt.bar(br3, CSE, color ='b', width = barWidth,
-        #edgecolor ='grey', label ='CSE')
  
     # Adding Xticks
-    plt.xlabel('Bert-base_uncased', fontweight ='bold', fontsize = 15)
+    plt.xlabel('Bert-base_cased', fontweight ='bold', fontsize = 15)
     plt.ylabel('Accuracy', fontweight ='bold', fontsize = 15)
     plt.xticks([r + barWidth for r in range(len(IT))],
-        ['1e-4\n Epoch=1', '1e-4\n Epoch=2', '1e-4\n Epoch=3', '5e-4\n Epoch=1', '5e-4\n Epoch=2', '5e-4\n Epoch=3', '1e-3\n Epoch=1', '1e-3\n Epoch=2', '1e-3\n Epoch=3'])
+        ['1e-4\n Epoch=5', '1e-4\n Epoch=7', '1e-4\n Epoch=9', '5e-4\n Epoch=5', '5e-4\n Epoch=7', '5e-4\n Epoch=9', '1e-3\n Epoch=5', '1e-3\n Epoch=7', '1e-3\n Epoch=9'])
  
     plt.legend()
-    plt.savefig("bert-base-uncased.png")
+    plt.savefig("bert-base-cased.png")
     
     # print the GPU memory usage just to make sure things are alright
     print_gpu_memory()
