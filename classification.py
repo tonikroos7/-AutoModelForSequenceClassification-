@@ -186,14 +186,22 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
 
         # normally, validation would be more useful when training for many epochs
         val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
+        val_acc.append(val_accuracy)
         print(f" - Average validation metrics: accuracy={val_accuracy}")
         acc = [i['accuracy'] for i in train_acc]
         val = [i['accuracy'] for i in val_acc]
 
+    plt.plot(acc, label='Training Accuracy')
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy")
+    plt.plot(val, label='Validation Accuracy')
+    plt.legend()
+    plt.savefig("train_val.png")
+'''
     with open('test_val.npy', 'wb') as f:
         np.save(f, np.array(acc))
         np.save(f, np.array(val))
-
+'''
 def pre_process(model_name, batch_size, device, small_subset):
     # download dataset
     print("Loading the dataset ...")

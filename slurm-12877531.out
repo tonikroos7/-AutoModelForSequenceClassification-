@@ -138,3 +138,385 @@ Some weights of the model checkpoint at bert-base-uncased were not used when ini
 - This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.629}
+ - Average validation metrics: accuracy={'accuracy': 0.6284403669724771}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.69575}
+ - Average validation metrics: accuracy={'accuracy': 0.5746177370030581}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.80025}
+ - Average validation metrics: accuracy={'accuracy': 0.6379204892966361}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.881875}
+ - Average validation metrics: accuracy={'accuracy': 0.6608562691131499}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.92175}
+ - Average validation metrics: accuracy={'accuracy': 0.6941896024464832}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.96175}
+ - Average validation metrics: accuracy={'accuracy': 0.6975535168195719}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.98}
+ - Average validation metrics: accuracy={'accuracy': 0.7024464831804281}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy={'accuracy': 0.9855}
+ - Average validation metrics: accuracy={'accuracy': 0.7076452599388379}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy={'accuracy': 0.99175}
+ - Average validation metrics: accuracy={'accuracy': 0.7006116207951071}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 956.62it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.59675}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.59575}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.608125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.61325}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.619875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 989.92it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.585625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.601125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.601625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.608}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.610875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.613875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.619125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1012.26it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.617625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.625875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.625875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.626375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.62625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.626375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.626125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy={'accuracy': 0.626125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy={'accuracy': 0.62625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1007.64it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.603375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.6225}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.624625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.62475}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.62475}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1000.07it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Found cached dataset boolq (/home/hguan16/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.59175}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.596625}
+ - Average validation metrics: accuracy={'accuracy': 0.3782874617737003}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.5975}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.600625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.613875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.620625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.624625}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 992.73it/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.582375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy={'accuracy': 0.593125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy={'accuracy': 0.603125}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy={'accuracy': 0.607375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy={'accuracy': 0.60725}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy={'accuracy': 0.611}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy={'accuracy': 0.620875}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy={'accuracy': 0.618375}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy={'accuracy': 0.62075}
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.859340GB
+torch.cuda.memory_reserved: 7.103516GB
+torch.cuda.max_memory_reserved: 7.103516GB
+Tue Mar 14 06:34:11 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   51C    P0   122W / 300W |  24268MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   30C    P0    44W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   30C    P0    41W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   29C    P0    44W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0   14   0   0  |   8196MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   14    0      44691      C   ...jeefzx3kp5jqdu/bin/python     8191MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy=Ellipsis
+ - Average TEST metrics: accuracy=Ellipsis

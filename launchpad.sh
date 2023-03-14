@@ -27,10 +27,10 @@ pip install -r requirements.txt # install Python dependencies
 #srun python classification_test.py  --experiment "overfit" --small_subset --device cuda --model "distilbert-base-uncased" --batch_size "64" --lr 1e-4 --num_epochs 20
 
 # runs hyperparameter selection code
-#srun python hyper_selection.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "64" --lr 1e-4 --num_epochs 30
+srun python hyper_selection.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "32" --lr 1e-4 --num_epochs 30
 
 # runs multi model code on uncased
 #srun python multi_model.py  --experiment "overfit" --device cuda --model "distilbert-base-cased" --batch_size "32" --lr 1e-4 --num_epochs 10
 
 # runs multi model code on cased
-srun python multi_model_uncased.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "32" --lr 1e-4 --num_epochs 10
+#srun python multi_model_uncased.py  --experiment "overfit" --device cuda --model "distilbert-base-uncased" --batch_size "32" --lr 1e-4 --num_epochs 10
